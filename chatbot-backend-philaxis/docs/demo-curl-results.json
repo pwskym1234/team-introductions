@@ -1,0 +1,185 @@
+{
+  "checks": [
+    {
+      "method": "GET",
+      "path": "/",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/demo",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/settings/jev",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/settings/jev",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/settings/jev",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/settings/jev",
+      "status": 422
+    },
+    {
+      "method": "POST",
+      "path": "/settings/gemini",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/settings/gemini",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/users/user_001/wearable",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/users/user_001/daily",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/users/user_001/daily/prefill?date=2026-10-03",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/users/user_001/context",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "in_scope",
+      "source": "heuristic"
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "in_scope",
+      "source": "heuristic"
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "off_topic",
+      "source": "heuristic"
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "off_topic",
+      "source": "heuristic"
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "malicious",
+      "source": "prefilter"
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "malicious",
+      "source": "heuristic"
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "malicious",
+      "source": "prefilter"
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "in_scope",
+      "source": "heuristic"
+    },
+    {
+      "method": "POST",
+      "path": "/chat",
+      "status": 200,
+      "category": "in_scope",
+      "source": "heuristic"
+    },
+    {
+      "method": "GET",
+      "path": "/audit?limit=3",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/audit?limit=101",
+      "status": 422
+    },
+    {
+      "method": "GET",
+      "path": "/settings/jev",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/demo/reset",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/audit",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/users/user_001/memories",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/settings/jev",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/settings/jev",
+      "status": 200
+    }
+  ],
+  "sample_sha256": "4556368407de7da5f9864669b29ec27fcd228ea2bd38ae35c137ae67bad52adc",
+  "key_leak_check": "passed: generated keys not in responses or runtime files",
+  "external_calls": "none; Gemini client configured then deleted before chat"
+}
