@@ -1,0 +1,11 @@
+{
+  "name": "health-decision-engine-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --experimental-strip-types tests/*.test.ts",
+    "demo": "node --experimental-strip-types src/demo.ts",
+    "brand": "node --experimental-strip-types src/server.ts"
+  }
+}
