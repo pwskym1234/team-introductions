@@ -1,0 +1,835 @@
+{
+  "health": {
+    "status": 200,
+    "response": {
+      "status": "ok",
+      "mode": "mock"
+    }
+  },
+  "context_before": {
+    "status": 200,
+    "response": {
+      "profile": {
+        "user_id": "user_001",
+        "age_group": "30대",
+        "goals": [
+          "체중"
+        ],
+        "persona": "체중 관리형"
+      },
+      "products": [
+        {
+          "name": "가상 다이어트 보조제 A",
+          "category": "다이어트 보조제",
+          "ingredients": [
+            {
+              "name": "가상 복합 원료",
+              "amount": "500 mg"
+            }
+          ],
+          "start_date": "2026-09-01",
+          "dosage": "하루 1정 (가상 기록, 섭취 권장 아님)"
+        }
+      ],
+      "as_of": "2026-10-03",
+      "periods": {
+        "recent": {
+          "start": "2026-09-27",
+          "end": "2026-10-03",
+          "metrics": {
+            "sleep_hours": {
+              "mean": 6.3,
+              "stddev": 0.37,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "steps": {
+              "mean": 6714.17,
+              "stddev": 200.9,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "exercise_minutes": {
+              "mean": 16.67,
+              "stddev": 11.79,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "weight_kg": {
+              "mean": 77.4,
+              "stddev": 0.06,
+              "recorded_days": 3,
+              "unknown_days": 4
+            },
+            "feeling": {
+              "mean": 3.5,
+              "stddev": 0.5,
+              "recorded_days": 6,
+              "unknown_days": 1
+            }
+          },
+          "intake_days": {
+            "평소대로": 5,
+            "변경": 0,
+            "안 함": 1,
+            "모름": 1
+          }
+        },
+        "previous": {
+          "start": "2026-09-20",
+          "end": "2026-09-26",
+          "metrics": {
+            "sleep_hours": {
+              "mean": 6.2,
+              "stddev": 0.48,
+              "recorded_days": 7,
+              "unknown_days": 0
+            },
+            "steps": {
+              "mean": 6065,
+              "stddev": 205.22,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "exercise_minutes": {
+              "mean": 10.71,
+              "stddev": 12.37,
+              "recorded_days": 7,
+              "unknown_days": 0
+            },
+            "weight_kg": {
+              "mean": 77.59,
+              "stddev": 0.04,
+              "recorded_days": 2,
+              "unknown_days": 5
+            },
+            "feeling": {
+              "mean": 3.29,
+              "stddev": 0.45,
+              "recorded_days": 7,
+              "unknown_days": 0
+            }
+          },
+          "intake_days": {
+            "평소대로": 6,
+            "변경": 0,
+            "안 함": 0,
+            "모름": 1
+          }
+        }
+      },
+      "changes": {
+        "sleep_hours": 0.1,
+        "steps": 649.17,
+        "exercise_minutes": 5.96,
+        "weight_kg": -0.19,
+        "feeling": 0.21
+      },
+      "recent_notes": [
+        {
+          "date": "2026-09-29",
+          "note": "늦은 시간에 잠들었음"
+        }
+      ],
+      "interpretation": "null은 모름. 표준편차는 모집단 기준. 평균 차이는 인과관계나 효능의 증거가 아님.",
+      "memories": []
+    }
+  },
+  "wearable": {
+    "status": 200,
+    "response": {
+      "records": [
+        {
+          "date": "2026-10-03",
+          "sleep_hours": 6.0,
+          "steps": 6000,
+          "exercise": [
+            {
+              "type": "걷기",
+              "minutes": 30.0,
+              "intensity": "낮음"
+            }
+          ],
+          "weight_kg": 77.33,
+          "intake": "기록 안 함",
+          "feeling": 4,
+          "note": null,
+          "source": "samsung_health_sample"
+        }
+      ]
+    }
+  },
+  "daily": {
+    "status": 200,
+    "response": {
+      "date": "2026-10-03",
+      "sleep_hours": 6.0,
+      "steps": 6000,
+      "exercise": [
+        {
+          "type": "걷기",
+          "minutes": 30.0,
+          "intensity": "낮음"
+        }
+      ],
+      "weight_kg": 72.5,
+      "intake": "평소대로",
+      "feeling": 3,
+      "note": "저녁 식사가 늦었음",
+      "source": "samsung_health_sample"
+    }
+  },
+  "prefill": {
+    "status": 200,
+    "response": {
+      "date": "2026-10-03",
+      "weight_kg": 72.5,
+      "intake": "평소대로",
+      "exercise": [
+        {
+          "type": "걷기",
+          "minutes": 30.0,
+          "intensity": "낮음"
+        }
+      ],
+      "feeling": 3,
+      "note": null
+    }
+  },
+  "invalid_weight": {
+    "status": 422,
+    "response": {
+      "detail": [
+        {
+          "type": "greater_than_equal",
+          "loc": [
+            "body",
+            "weight_kg"
+          ],
+          "msg": "Input should be greater than or equal to 20",
+          "input": 10,
+          "ctx": {
+            "ge": 20.0
+          }
+        }
+      ]
+    }
+  },
+  "save_chat": {
+    "status": 200,
+    "response": {
+      "reply": "현재 데모 응답입니다. 기록 기준일은 2026-10-03입니다.\n체중: 최근 평균 75.79kg, 이전 평균 77.59kg, 차이 -1.8kg; 최근 기록 3일, 미기록 4일, 표준편차 2.33kg.\n수면: 최근 평균 6.23시간, 이전 평균 6.2시간, 차이 +0.03시간; 최근 기록 6일, 미기록 1일, 표준편차 0.39시간.\n걸음: 최근 평균 6545보, 이전 평균 6065보, 차이 +480보; 최근 기록 6일, 미기록 1일, 표준편차 285.77보.\n작은 차이도 기록에서 살펴볼 수 있지만 누락이 있어 해석에 주의가 필요하며, 제품 효과를 뜻하지 않습니다.\n현재 기록만으로 복용을 계속해도 안전한지는 모름입니다. 진단·처방은 제공하지 않으며, 복용 여부는 의료진·약사에게 확인해 주세요.\n가슴 통증, 심한 호흡곤란 등 심각한 증상이 있으면 즉시 의료진 또는 응급의료 도움을 받으세요.\n함께 볼 생활 맥락: 2026-10-03 · 야근 중; 2026-10-03 · 카페인 하루 3잔; 2026-10-03 · 잠을 잘 못 자요\n최근 수면이나 복용 후 몸 상태에서 달라진 점이 있나요?",
+      "verdict": {
+        "category": "in_scope",
+        "reasons": [
+          "건강 관련성·정보 추출 시도를 독립 판정"
+        ],
+        "attack_types": [],
+        "confidence": 0.9,
+        "source": "heuristic",
+        "health_relevant": 0.9,
+        "extraction_attempt": 0.05,
+        "health_band": "high",
+        "extraction_band": "low",
+        "judge_decisions": {}
+      },
+      "blocked": false,
+      "block_reason": null,
+      "saved_memories": [
+        {
+          "id": "dc52951718744f5e9cf5ae143ffd176d",
+          "user_id": "user_001",
+          "created_at": "2026-10-03",
+          "category": "lifestyle",
+          "content": "야근 중",
+          "source_message_excerpt": "야근",
+          "status": "active"
+        },
+        {
+          "id": "4adfb9c6f36f4fba82799009e7deab7a",
+          "user_id": "user_001",
+          "created_at": "2026-10-03",
+          "category": "lifestyle",
+          "content": "카페인 하루 3잔",
+          "source_message_excerpt": "커피를 하루 3잔",
+          "status": "active"
+        },
+        {
+          "id": "6499fc14f37d4731accd7cbca113d4fe",
+          "user_id": "user_001",
+          "created_at": "2026-10-03",
+          "category": "symptom",
+          "content": "잠을 잘 못 자요",
+          "source_message_excerpt": "잠을 잘 못 자요",
+          "status": "active"
+        }
+      ],
+      "deleted_memory_ids": [],
+      "recommendations": [
+        {
+          "product_id": "demo_12",
+          "name": "가상 비타민C 4",
+          "price": 23000,
+          "reason_lines": [
+            "인정 기능성 안내(샘플): 항산화 작용을 하여 유해산소로부터 세포를 보호하는데 필요",
+            "사용자 평점 4.5 (425개 리뷰·가상 샘플)",
+            "리뷰 요약(가상 샘플): 포장과 휴대 편의에 관한 가상 후기",
+            "10/3 기록: 야근 중"
+          ],
+          "coupang_url": null,
+          "disclosure": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+        },
+        {
+          "product_id": "demo_07",
+          "name": "가상 테아닌 3",
+          "price": 18000,
+          "reason_lines": [
+            "인정 기능성 안내(샘플): 스트레스로 인한 긴장완화에 도움을 줄 수 있음",
+            "사용자 평점 4.4 (250개 리뷰·가상 샘플)",
+            "리뷰 요약(가상 샘플): 포장과 휴대 편의에 관한 가상 후기",
+            "10/3 기록: 야근 중",
+            "10/3 기록: 카페인 하루 3잔",
+            "10/3 기록: 잠을 잘 못 자요"
+          ],
+          "coupang_url": null,
+          "disclosure": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+        }
+      ]
+    }
+  },
+  "context_saved": {
+    "status": 200,
+    "response": {
+      "profile": {
+        "user_id": "user_001",
+        "age_group": "30대",
+        "goals": [
+          "체중"
+        ],
+        "persona": "체중 관리형"
+      },
+      "products": [
+        {
+          "name": "가상 다이어트 보조제 A",
+          "category": "다이어트 보조제",
+          "ingredients": [
+            {
+              "name": "가상 복합 원료",
+              "amount": "500 mg"
+            }
+          ],
+          "start_date": "2026-09-01",
+          "dosage": "하루 1정 (가상 기록, 섭취 권장 아님)"
+        }
+      ],
+      "as_of": "2026-10-03",
+      "periods": {
+        "recent": {
+          "start": "2026-09-27",
+          "end": "2026-10-03",
+          "metrics": {
+            "sleep_hours": {
+              "mean": 6.23,
+              "stddev": 0.39,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "steps": {
+              "mean": 6545,
+              "stddev": 285.77,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "exercise_minutes": {
+              "mean": 17.5,
+              "stddev": 12.5,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "weight_kg": {
+              "mean": 75.79,
+              "stddev": 2.33,
+              "recorded_days": 3,
+              "unknown_days": 4
+            },
+            "feeling": {
+              "mean": 3.33,
+              "stddev": 0.47,
+              "recorded_days": 6,
+              "unknown_days": 1
+            }
+          },
+          "intake_days": {
+            "평소대로": 6,
+            "변경": 0,
+            "안 함": 1,
+            "모름": 0
+          }
+        },
+        "previous": {
+          "start": "2026-09-20",
+          "end": "2026-09-26",
+          "metrics": {
+            "sleep_hours": {
+              "mean": 6.2,
+              "stddev": 0.48,
+              "recorded_days": 7,
+              "unknown_days": 0
+            },
+            "steps": {
+              "mean": 6065,
+              "stddev": 205.22,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "exercise_minutes": {
+              "mean": 10.71,
+              "stddev": 12.37,
+              "recorded_days": 7,
+              "unknown_days": 0
+            },
+            "weight_kg": {
+              "mean": 77.59,
+              "stddev": 0.04,
+              "recorded_days": 2,
+              "unknown_days": 5
+            },
+            "feeling": {
+              "mean": 3.29,
+              "stddev": 0.45,
+              "recorded_days": 7,
+              "unknown_days": 0
+            }
+          },
+          "intake_days": {
+            "평소대로": 6,
+            "변경": 0,
+            "안 함": 0,
+            "모름": 1
+          }
+        }
+      },
+      "changes": {
+        "sleep_hours": 0.03,
+        "steps": 480,
+        "exercise_minutes": 6.79,
+        "weight_kg": -1.8,
+        "feeling": 0.04
+      },
+      "recent_notes": [
+        {
+          "date": "2026-09-29",
+          "note": "늦은 시간에 잠들었음"
+        },
+        {
+          "date": "2026-10-03",
+          "note": "저녁 식사가 늦었음"
+        }
+      ],
+      "interpretation": "null은 모름. 표준편차는 모집단 기준. 평균 차이는 인과관계나 효능의 증거가 아님.",
+      "memories": [
+        {
+          "id": "dc52951718744f5e9cf5ae143ffd176d",
+          "created_at": "2026-10-03",
+          "category": "lifestyle",
+          "content": "야근 중"
+        },
+        {
+          "id": "4adfb9c6f36f4fba82799009e7deab7a",
+          "created_at": "2026-10-03",
+          "category": "lifestyle",
+          "content": "카페인 하루 3잔"
+        },
+        {
+          "id": "6499fc14f37d4731accd7cbca113d4fe",
+          "created_at": "2026-10-03",
+          "category": "symptom",
+          "content": "잠을 잘 못 자요"
+        }
+      ]
+    }
+  },
+  "wrong_owner": {
+    "status": 404,
+    "response": {
+      "detail": "메모를 찾을 수 없습니다."
+    }
+  },
+  "delete_caffeine": {
+    "status": 200,
+    "response": {
+      "deleted_memory_id": "4adfb9c6f36f4fba82799009e7deab7a"
+    }
+  },
+  "memories_deleted": {
+    "status": 200,
+    "response": [
+      {
+        "id": "dc52951718744f5e9cf5ae143ffd176d",
+        "user_id": "user_001",
+        "created_at": "2026-10-03",
+        "category": "lifestyle",
+        "content": "야근 중",
+        "source_message_excerpt": "야근",
+        "status": "active"
+      },
+      {
+        "id": "6499fc14f37d4731accd7cbca113d4fe",
+        "user_id": "user_001",
+        "created_at": "2026-10-03",
+        "category": "symptom",
+        "content": "잠을 잘 못 자요",
+        "source_message_excerpt": "잠을 잘 못 자요",
+        "status": "active"
+      }
+    ]
+  },
+  "context_deleted": {
+    "status": 200,
+    "response": {
+      "profile": {
+        "user_id": "user_001",
+        "age_group": "30대",
+        "goals": [
+          "체중"
+        ],
+        "persona": "체중 관리형"
+      },
+      "products": [
+        {
+          "name": "가상 다이어트 보조제 A",
+          "category": "다이어트 보조제",
+          "ingredients": [
+            {
+              "name": "가상 복합 원료",
+              "amount": "500 mg"
+            }
+          ],
+          "start_date": "2026-09-01",
+          "dosage": "하루 1정 (가상 기록, 섭취 권장 아님)"
+        }
+      ],
+      "as_of": "2026-10-03",
+      "periods": {
+        "recent": {
+          "start": "2026-09-27",
+          "end": "2026-10-03",
+          "metrics": {
+            "sleep_hours": {
+              "mean": 6.23,
+              "stddev": 0.39,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "steps": {
+              "mean": 6545,
+              "stddev": 285.77,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "exercise_minutes": {
+              "mean": 17.5,
+              "stddev": 12.5,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "weight_kg": {
+              "mean": 75.79,
+              "stddev": 2.33,
+              "recorded_days": 3,
+              "unknown_days": 4
+            },
+            "feeling": {
+              "mean": 3.33,
+              "stddev": 0.47,
+              "recorded_days": 6,
+              "unknown_days": 1
+            }
+          },
+          "intake_days": {
+            "평소대로": 6,
+            "변경": 0,
+            "안 함": 1,
+            "모름": 0
+          }
+        },
+        "previous": {
+          "start": "2026-09-20",
+          "end": "2026-09-26",
+          "metrics": {
+            "sleep_hours": {
+              "mean": 6.2,
+              "stddev": 0.48,
+              "recorded_days": 7,
+              "unknown_days": 0
+            },
+            "steps": {
+              "mean": 6065,
+              "stddev": 205.22,
+              "recorded_days": 6,
+              "unknown_days": 1
+            },
+            "exercise_minutes": {
+              "mean": 10.71,
+              "stddev": 12.37,
+              "recorded_days": 7,
+              "unknown_days": 0
+            },
+            "weight_kg": {
+              "mean": 77.59,
+              "stddev": 0.04,
+              "recorded_days": 2,
+              "unknown_days": 5
+            },
+            "feeling": {
+              "mean": 3.29,
+              "stddev": 0.45,
+              "recorded_days": 7,
+              "unknown_days": 0
+            }
+          },
+          "intake_days": {
+            "평소대로": 6,
+            "변경": 0,
+            "안 함": 0,
+            "모름": 1
+          }
+        }
+      },
+      "changes": {
+        "sleep_hours": 0.03,
+        "steps": 480,
+        "exercise_minutes": 6.79,
+        "weight_kg": -1.8,
+        "feeling": 0.04
+      },
+      "recent_notes": [
+        {
+          "date": "2026-09-29",
+          "note": "늦은 시간에 잠들었음"
+        },
+        {
+          "date": "2026-10-03",
+          "note": "저녁 식사가 늦었음"
+        }
+      ],
+      "interpretation": "null은 모름. 표준편차는 모집단 기준. 평균 차이는 인과관계나 효능의 증거가 아님.",
+      "memories": [
+        {
+          "id": "dc52951718744f5e9cf5ae143ffd176d",
+          "created_at": "2026-10-03",
+          "category": "lifestyle",
+          "content": "야근 중"
+        },
+        {
+          "id": "6499fc14f37d4731accd7cbca113d4fe",
+          "created_at": "2026-10-03",
+          "category": "symptom",
+          "content": "잠을 잘 못 자요"
+        }
+      ]
+    }
+  },
+  "after_delete_chat": {
+    "status": 200,
+    "response": {
+      "reply": "현재 데모 응답입니다. 기록 기준일은 2026-10-03입니다.\n체중: 최근 평균 75.79kg, 이전 평균 77.59kg, 차이 -1.8kg; 최근 기록 3일, 미기록 4일, 표준편차 2.33kg.\n수면: 최근 평균 6.23시간, 이전 평균 6.2시간, 차이 +0.03시간; 최근 기록 6일, 미기록 1일, 표준편차 0.39시간.\n걸음: 최근 평균 6545보, 이전 평균 6065보, 차이 +480보; 최근 기록 6일, 미기록 1일, 표준편차 285.77보.\n작은 차이도 기록에서 살펴볼 수 있지만 누락이 있어 해석에 주의가 필요하며, 제품 효과를 뜻하지 않습니다.\n현재 기록만으로 복용을 계속해도 안전한지는 모름입니다. 진단·처방은 제공하지 않으며, 복용 여부는 의료진·약사에게 확인해 주세요.\n가슴 통증, 심한 호흡곤란 등 심각한 증상이 있으면 즉시 의료진 또는 응급의료 도움을 받으세요.\n함께 볼 생활 맥락: 2026-10-03 · 야근 중; 2026-10-03 · 잠을 잘 못 자요\n최근 수면이나 복용 후 몸 상태에서 달라진 점이 있나요?",
+      "verdict": {
+        "category": "in_scope",
+        "reasons": [
+          "건강 관련성·정보 추출 시도를 독립 판정"
+        ],
+        "attack_types": [],
+        "confidence": 0.9,
+        "source": "heuristic",
+        "health_relevant": 0.9,
+        "extraction_attempt": 0.05,
+        "health_band": "high",
+        "extraction_band": "low",
+        "judge_decisions": {}
+      },
+      "blocked": false,
+      "block_reason": null,
+      "saved_memories": [],
+      "deleted_memory_ids": [],
+      "recommendations": [
+        {
+          "product_id": "demo_12",
+          "name": "가상 비타민C 4",
+          "price": 23000,
+          "reason_lines": [
+            "인정 기능성 안내(샘플): 항산화 작용을 하여 유해산소로부터 세포를 보호하는데 필요",
+            "사용자 평점 4.5 (425개 리뷰·가상 샘플)",
+            "리뷰 요약(가상 샘플): 포장과 휴대 편의에 관한 가상 후기",
+            "10/3 기록: 야근 중"
+          ],
+          "coupang_url": null,
+          "disclosure": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+        },
+        {
+          "product_id": "demo_07",
+          "name": "가상 테아닌 3",
+          "price": 18000,
+          "reason_lines": [
+            "인정 기능성 안내(샘플): 스트레스로 인한 긴장완화에 도움을 줄 수 있음",
+            "사용자 평점 4.4 (250개 리뷰·가상 샘플)",
+            "리뷰 요약(가상 샘플): 포장과 휴대 편의에 관한 가상 후기",
+            "10/3 기록: 야근 중",
+            "10/3 기록: 잠을 잘 못 자요"
+          ],
+          "coupang_url": null,
+          "disclosure": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+        }
+      ]
+    }
+  },
+  "save_again": {
+    "status": 200,
+    "response": {
+      "reply": "현재 데모 응답입니다. 기록 기준일은 2026-10-03입니다.\n체중: 최근 평균 75.79kg, 이전 평균 77.59kg, 차이 -1.8kg; 최근 기록 3일, 미기록 4일, 표준편차 2.33kg.\n수면: 최근 평균 6.23시간, 이전 평균 6.2시간, 차이 +0.03시간; 최근 기록 6일, 미기록 1일, 표준편차 0.39시간.\n걸음: 최근 평균 6545보, 이전 평균 6065보, 차이 +480보; 최근 기록 6일, 미기록 1일, 표준편차 285.77보.\n작은 차이도 기록에서 살펴볼 수 있지만 누락이 있어 해석에 주의가 필요하며, 제품 효과를 뜻하지 않습니다.\n현재 기록만으로 복용을 계속해도 안전한지는 모름입니다. 진단·처방은 제공하지 않으며, 복용 여부는 의료진·약사에게 확인해 주세요.\n가슴 통증, 심한 호흡곤란 등 심각한 증상이 있으면 즉시 의료진 또는 응급의료 도움을 받으세요.\n함께 볼 생활 맥락: 2026-10-03 · 야근 중; 2026-10-03 · 잠을 잘 못 자요; 2026-10-03 · 카페인 하루 3잔\n최근 수면이나 복용 후 몸 상태에서 달라진 점이 있나요?",
+      "verdict": {
+        "category": "in_scope",
+        "reasons": [
+          "건강 관련성·정보 추출 시도를 독립 판정"
+        ],
+        "attack_types": [],
+        "confidence": 0.9,
+        "source": "heuristic",
+        "health_relevant": 0.9,
+        "extraction_attempt": 0.05,
+        "health_band": "high",
+        "extraction_band": "low",
+        "judge_decisions": {}
+      },
+      "blocked": false,
+      "block_reason": null,
+      "saved_memories": [
+        {
+          "id": "b01d116951b344dfb7141aaa4669a4e6",
+          "user_id": "user_001",
+          "created_at": "2026-10-03",
+          "category": "lifestyle",
+          "content": "카페인 하루 3잔",
+          "source_message_excerpt": "커피를 하루 3잔",
+          "status": "active"
+        }
+      ],
+      "deleted_memory_ids": [],
+      "recommendations": []
+    }
+  },
+  "natural_delete": {
+    "status": 200,
+    "response": {
+      "reply": "메모 1개를 삭제했습니다. 이후 대화·리포트·추천에 사용하지 않습니다.",
+      "verdict": {
+        "category": "in_scope",
+        "reasons": [
+          "건강 관련성·정보 추출 시도를 독립 판정"
+        ],
+        "attack_types": [],
+        "confidence": 0.9,
+        "source": "heuristic",
+        "health_relevant": 0.9,
+        "extraction_attempt": 0.05,
+        "health_band": "high",
+        "extraction_band": "low",
+        "judge_decisions": {}
+      },
+      "blocked": false,
+      "block_reason": null,
+      "saved_memories": [],
+      "deleted_memory_ids": [
+        "b01d116951b344dfb7141aaa4669a4e6"
+      ],
+      "recommendations": []
+    }
+  },
+  "off_topic": {
+    "status": 200,
+    "response": {
+      "reply": "저는 본인의 건강·수면·활동·체중·식단·복용 기록과 앱 리포트를 도와드려요. 관련 내용을 질문해 주세요.",
+      "verdict": {
+        "category": "off_topic",
+        "reasons": [
+          "건강 관련성·정보 추출 시도를 독립 판정"
+        ],
+        "attack_types": [],
+        "confidence": 0.95,
+        "source": "heuristic",
+        "health_relevant": 0.05,
+        "extraction_attempt": 0.05,
+        "health_band": "low",
+        "extraction_band": "low",
+        "judge_decisions": {}
+      },
+      "blocked": true,
+      "block_reason": "off_topic",
+      "saved_memories": [],
+      "deleted_memory_ids": [],
+      "recommendations": []
+    }
+  },
+  "attack": {
+    "status": 200,
+    "response": {
+      "reply": "요청을 처리할 수 없습니다. 본인의 건강 기록에 관한 질문을 해 주세요.",
+      "verdict": {
+        "category": "malicious",
+        "reasons": [
+          "건강 관련성·정보 추출 시도를 독립 판정"
+        ],
+        "attack_types": [
+          "prompt_leak"
+        ],
+        "confidence": 1.0,
+        "source": "prefilter",
+        "health_relevant": 0.1,
+        "extraction_attempt": 1.0,
+        "health_band": "low",
+        "extraction_band": "high",
+        "judge_decisions": {}
+      },
+      "blocked": true,
+      "block_reason": "malicious",
+      "saved_memories": [],
+      "deleted_memory_ids": [],
+      "recommendations": []
+    }
+  },
+  "progressive_attack": {
+    "status": 200,
+    "response": {
+      "reply": "요청을 처리할 수 없습니다. 본인의 건강 기록에 관한 질문을 해 주세요.",
+      "verdict": {
+        "category": "malicious",
+        "reasons": [
+          "건강 관련성·정보 추출 시도를 독립 판정"
+        ],
+        "attack_types": [
+          "other"
+        ],
+        "confidence": 0.9,
+        "source": "heuristic",
+        "health_relevant": 0.1,
+        "extraction_attempt": 0.9,
+        "health_band": "low",
+        "extraction_band": "high",
+        "judge_decisions": {}
+      },
+      "blocked": true,
+      "block_reason": "malicious",
+      "saved_memories": [],
+      "deleted_memory_ids": [],
+      "recommendations": []
+    }
+  },
+  "checks": {
+    "sample_unchanged": true,
+    "initial_saved_memory_count": 3,
+    "initial_recommendation_count": 2,
+    "after_delete_memory_count": 2,
+    "deleted_fact_absent_from_context_and_reply_and_cards": true,
+    "natural_delete_count": 1
+  }
+}

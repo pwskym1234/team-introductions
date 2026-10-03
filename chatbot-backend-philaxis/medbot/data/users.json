@@ -1,0 +1,822 @@
+{
+  "user_001": {
+    "profile": {
+      "user_id": "user_001",
+      "age_group": "30대",
+      "goals": [
+        "체중"
+      ],
+      "persona": "체중 관리형"
+    },
+    "products": [
+      {
+        "name": "가상 다이어트 보조제 A",
+        "category": "다이어트 보조제",
+        "ingredients": [
+          {
+            "name": "가상 복합 원료",
+            "amount": "500 mg"
+          }
+        ],
+        "start_date": "2026-09-01",
+        "dosage": "하루 1정 (가상 기록, 섭취 권장 아님)"
+      }
+    ],
+    "daily_logs": [
+      {
+        "date": "2026-09-06",
+        "sleep_hours": 5.6,
+        "steps": 4450,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 78.0,
+        "intake": "기록 안 함",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-07",
+        "sleep_hours": 5.9,
+        "steps": 4545,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-08",
+        "sleep_hours": 6.2,
+        "steps": 4640,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-09",
+        "sleep_hours": null,
+        "steps": 4735,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": 77.92,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-10",
+        "sleep_hours": 6.8,
+        "steps": null,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-11",
+        "sleep_hours": 5.6,
+        "steps": 4925,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-12",
+        "sleep_hours": 5.9,
+        "steps": 5020,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 77.85,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-13",
+        "sleep_hours": 6.2,
+        "steps": 5115,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": null,
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-14",
+        "sleep_hours": 6.5,
+        "steps": 5210,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": null,
+        "note": null
+      },
+      {
+        "date": "2026-09-15",
+        "sleep_hours": 6.8,
+        "steps": 5305,
+        "exercise": null,
+        "weight_kg": 77.78,
+        "intake": "기록 안 함",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-16",
+        "sleep_hours": 5.6,
+        "steps": 5400,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-17",
+        "sleep_hours": null,
+        "steps": 5495,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "안 함",
+        "feeling": 3,
+        "note": "늦은 시간에 잠들었음"
+      },
+      {
+        "date": "2026-09-18",
+        "sleep_hours": 6.2,
+        "steps": 5590,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 77.7,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-19",
+        "sleep_hours": 6.5,
+        "steps": 5685,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-20",
+        "sleep_hours": 6.8,
+        "steps": 5780,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-21",
+        "sleep_hours": 5.6,
+        "steps": 5875,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": 77.62,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-22",
+        "sleep_hours": 5.9,
+        "steps": 5970,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-23",
+        "sleep_hours": 6.2,
+        "steps": null,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-24",
+        "sleep_hours": 6.5,
+        "steps": 6160,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 77.55,
+        "intake": "기록 안 함",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-25",
+        "sleep_hours": 6.8,
+        "steps": 6255,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-26",
+        "sleep_hours": 5.6,
+        "steps": 6350,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-27",
+        "sleep_hours": 6.1,
+        "steps": 6445,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": 77.47,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-28",
+        "sleep_hours": 6.4,
+        "steps": 6540,
+        "exercise": null,
+        "weight_kg": null,
+        "intake": "안 함",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-29",
+        "sleep_hours": null,
+        "steps": 6635,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": "늦은 시간에 잠들었음"
+      },
+      {
+        "date": "2026-09-30",
+        "sleep_hours": 7.0,
+        "steps": 6730,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 77.4,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-10-01",
+        "sleep_hours": 5.8,
+        "steps": null,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-10-02",
+        "sleep_hours": 6.1,
+        "steps": 6920,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": null,
+        "note": null
+      },
+      {
+        "date": "2026-10-03",
+        "sleep_hours": 6.4,
+        "steps": 7015,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": 77.33,
+        "intake": "기록 안 함",
+        "feeling": 4,
+        "note": null
+      }
+    ]
+  },
+  "user_002": {
+    "profile": {
+      "user_id": "user_002",
+      "age_group": "40대",
+      "goals": [
+        "수면"
+      ],
+      "persona": "수면 개선형"
+    },
+    "products": [
+      {
+        "name": "가상 마그네슘 B",
+        "category": "미네랄",
+        "ingredients": [
+          {
+            "name": "마그네슘",
+            "amount": "100 mg"
+          }
+        ],
+        "start_date": "2026-09-01",
+        "dosage": "하루 1정 (가상 기록, 섭취 권장 아님)"
+      }
+    ],
+    "daily_logs": [
+      {
+        "date": "2026-09-06",
+        "sleep_hours": 6.1,
+        "steps": 4700,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 64.0,
+        "intake": "기록 안 함",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-07",
+        "sleep_hours": 6.4,
+        "steps": 4795,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-08",
+        "sleep_hours": 6.7,
+        "steps": 4890,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-09",
+        "sleep_hours": null,
+        "steps": 4985,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": 63.92,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-10",
+        "sleep_hours": 7.3,
+        "steps": null,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-11",
+        "sleep_hours": 6.1,
+        "steps": 5175,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-12",
+        "sleep_hours": 6.4,
+        "steps": 5270,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 63.85,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-13",
+        "sleep_hours": 6.7,
+        "steps": 5365,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": null,
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-14",
+        "sleep_hours": 7.0,
+        "steps": 5460,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": null,
+        "note": null
+      },
+      {
+        "date": "2026-09-15",
+        "sleep_hours": 7.3,
+        "steps": 5555,
+        "exercise": null,
+        "weight_kg": 63.77,
+        "intake": "기록 안 함",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-16",
+        "sleep_hours": 6.1,
+        "steps": 5650,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-17",
+        "sleep_hours": null,
+        "steps": 5745,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "안 함",
+        "feeling": 3,
+        "note": "늦은 시간에 잠들었음"
+      },
+      {
+        "date": "2026-09-18",
+        "sleep_hours": 6.7,
+        "steps": 5840,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 63.7,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-19",
+        "sleep_hours": 7.0,
+        "steps": 5935,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-20",
+        "sleep_hours": 7.3,
+        "steps": 6030,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-21",
+        "sleep_hours": 6.1,
+        "steps": 6125,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": 63.62,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-22",
+        "sleep_hours": 6.4,
+        "steps": 6220,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-23",
+        "sleep_hours": 6.7,
+        "steps": null,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-24",
+        "sleep_hours": 7.0,
+        "steps": 6410,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 63.55,
+        "intake": "기록 안 함",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-25",
+        "sleep_hours": 7.3,
+        "steps": 6505,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-26",
+        "sleep_hours": 6.1,
+        "steps": 6600,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-27",
+        "sleep_hours": 6.6,
+        "steps": 6695,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": 63.48,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-09-28",
+        "sleep_hours": 6.9,
+        "steps": 6790,
+        "exercise": null,
+        "weight_kg": null,
+        "intake": "안 함",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-09-29",
+        "sleep_hours": null,
+        "steps": 6885,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": "늦은 시간에 잠들었음"
+      },
+      {
+        "date": "2026-09-30",
+        "sleep_hours": 7.5,
+        "steps": 6980,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": 63.4,
+        "intake": "평소대로",
+        "feeling": 4,
+        "note": null
+      },
+      {
+        "date": "2026-10-01",
+        "sleep_hours": 6.3,
+        "steps": null,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": 3,
+        "note": null
+      },
+      {
+        "date": "2026-10-02",
+        "sleep_hours": 6.6,
+        "steps": 7170,
+        "exercise": {
+          "type": "휴식",
+          "minutes": 0,
+          "intensity": "낮음"
+        },
+        "weight_kg": null,
+        "intake": "평소대로",
+        "feeling": null,
+        "note": null
+      },
+      {
+        "date": "2026-10-03",
+        "sleep_hours": 6.9,
+        "steps": 7265,
+        "exercise": {
+          "type": "걷기",
+          "minutes": 25,
+          "intensity": "낮음"
+        },
+        "weight_kg": 63.33,
+        "intake": "기록 안 함",
+        "feeling": 4,
+        "note": null
+      }
+    ]
+  }
+}

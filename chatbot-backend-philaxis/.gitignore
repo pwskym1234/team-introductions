@@ -1,0 +1,11 @@
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+logs/
+data/
+!medbot/data/
+*.egg-info/
+build/
+dist/
